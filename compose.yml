@@ -61,6 +61,7 @@ services:
       - ./configs/grafana/provisining:/etc/grafana/provisioning
       - ./configs/grafana/dashboards/cadvisor.yml:/usr/lib/dashboards/cadvisor.json
       - ./configs/grafana/dashboards/node_exporter.yml:/usr/lib/dashboards/node_exporter.json
+      - ./configs/grafana/dashboards/perfomance.yml:/usr/lib/dashboards/perfomance.json
   cadvisor:
     image: gcr.io/cadvisor/cadvisor:latest
     container_name: cadvisor
