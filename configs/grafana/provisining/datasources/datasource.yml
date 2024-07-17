@@ -7,3 +7,13 @@ datasources:
   isDefault: true
   access: proxy
   editable: true
+- name: InfluxDB
+  type: influxdb
+  access: proxy
+  user: admin
+  url: http://influxdb:8086
+  jsonData:
+    dbName: perfomance_db
+    httpMode: GET
+  secureJsonData:
+    password: influx
